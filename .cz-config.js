@@ -3,7 +3,7 @@ console.info('>>> local config in repo: ', __dirname);
 module.exports = {
   types: [
     { value: 'feat', name: 'feat:     A new feature' },
-    { value: 'fix', name: 'fix:      A bug fix' },
+    { value: '🚧 fix', name: 'fix:      A bug fix' },
     { value: 'docs', name: 'docs:     Documentation only changes' },
     {
       value: 'style',

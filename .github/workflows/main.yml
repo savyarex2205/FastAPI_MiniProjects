@@ -1,4 +1,18 @@
 on:
   push:
     branches:
-    - main
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Print a message
+      run: echo "Workflow executed on push or merge to main branch"
